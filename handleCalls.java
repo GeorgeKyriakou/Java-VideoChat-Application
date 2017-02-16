@@ -154,15 +154,5 @@ public class handleCalls implements ActionListener, Runnable {
 		});
 	}
 
-	// public static void main(String[] args) {
-	//
-	// // EventQueue.invokeLater(new Runnable() {
-	// // // @Override
-	// // public void run() {
-	// // new handleEverything("Server").start();
-	// // new handleEverything("Client").start();
-	// // }
-	// // });
-	//
-	// }
+
 }
