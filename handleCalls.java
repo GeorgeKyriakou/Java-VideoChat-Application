@@ -77,7 +77,7 @@ public class handleCalls implements ActionListener, Runnable {
 				String[] param= AddressBook.getParam(contact);
 				f.setVisible(true);
 				f.setTitle(contact);
-				f.setSize(500, 400);
+				f.setSize(800, 600);
 				//ClientClass myClass = new ClientClass(param[2]);
 				//myClass.start();
 				socket = new Socket(param[0], Integer.parseInt(param[1]));
@@ -114,6 +114,7 @@ public class handleCalls implements ActionListener, Runnable {
 				if (input == 0 && input!=null) {
 					f.setVisible(true);
 					f.setTitle(caller);
+					f.setSize(800, 600);
 					display("Connected to " + caller);
 					out.write('1');
 					send.doClick();
