@@ -70,17 +70,17 @@ public class ContactList {
 			int si = nameList.size();
 
 			Integer input = JOptionPane.showConfirmDialog(null,
-					"Are you sure you want to delete " + name + " from contact list?");
+					"Are you sure you want to remove " + name + " from contact list?");
 			if (input == 0 && input != null) {
 				nameList.remove(name); // remove the contact
 				if (nameList.size() < si) { // removing is successful
 					pushToFile(nameList);
 					System.out.println("Contact has been deleted!");
+					JOptionPane.showMessageDialog(null, name + "Has been removed from contact List");
 				}
 			}
 		}
 	}
-
 	public static void pushToFile(HashMap<String, Contact> obj) {
 		try {
 			FileOutputStream FileOS = new FileOutputStream("ContactList.bin");
