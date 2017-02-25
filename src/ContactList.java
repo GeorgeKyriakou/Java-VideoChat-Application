@@ -76,7 +76,7 @@ public class ContactList {
 				if (nameList.size() < si) { // removing is successful
 					pushToFile(nameList);
 					System.out.println("Contact has been deleted!");
-					JOptionPane.showMessageDialog(null, name + "Has been removed from contact List");
+					JOptionPane.showMessageDialog(null, name + " has been removed from contact List");
 				}
 			}
 		}
