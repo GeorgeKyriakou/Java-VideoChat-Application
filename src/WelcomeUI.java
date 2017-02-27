@@ -47,31 +47,36 @@ public class WelcomeUI {
 		
 		UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 		JFrame launcher = new JFrame();
-		JFrame frame = new JFrame();
-		JButton button = new JButton("Call Contact");
+		final JFrame frame = new JFrame();
+		JButton callcontact = new JButton("Call Contact");
 		JButton addContact = new JButton("Add new Contact");
 		JButton deleteContact = new JButton("Delete Contact");	
+		JPanel addRemovePnl = new JPanel();
 		GridBagConstraints c = new GridBagConstraints();
-		c.fill = GridBagConstraints.VERTICAL;
-		c.fill = GridBagConstraints.NORTH;
 		launcher.setVisible(true);
 		frame.setLayout(new GridBagLayout());
 		frame.setVisible(true);
-		frame.setSize(500, 400);	
-		frame.add(button,c);
-		c.fill=GridBagConstraints.CENTER;
-		frame.add(contactList,c);	
-		c.fill=GridBagConstraints.SOUTHWEST;
-		frame.add(addContact,c);
-		c.fill=GridBagConstraints.SOUTHEAST;
-		frame.add(deleteContact,c);
+		frame.setSize(500, 400);
+		addRemovePnl.add(addContact);
+		addRemovePnl.add(deleteContact);
+		c.gridx = GridBagConstraints.CENTER;
+		c.gridy = 0;
+		frame.add(addRemovePnl,c);	
+		c.gridx = GridBagConstraints.CENTER;
+		c.gridy = 3;
+		c.gridwidth = 3;
+		c.fill = GridBagConstraints.HORIZONTAL;
+		frame.add(contactList,c);
+		c.gridx = GridBagConstraints.CENTER;
+		c.gridy = 10;
+		frame.add(callcontact,c);
 		frame.setFont(font);
 		frame.setTitle("Welcome " + getUId());
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.repaint();
 
 		
-		button.addActionListener(new ActionListener() {
+		callcontact.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				new handleCalls("Client", null, (String) contactList.getSelectedValue()).start();
 			}
