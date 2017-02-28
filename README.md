@@ -25,4 +25,4 @@ The Java side of the application consists of the following classes:
 
 Using the Java Mission Control, we measure the performance of the application over a short period of time (around 10 minutes), and get the
 following statistics.
-https://github.com/GeorgeKyriakou/Java-VideoChat-Application.wiki.git
+![alt tag](https://writelatex.s3.amazonaws.com/bbtddzytdyqp/uploads/388/10417193/1.png)
