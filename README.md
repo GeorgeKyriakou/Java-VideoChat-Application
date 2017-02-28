@@ -22,3 +22,7 @@ The Java side of the application consists of the following classes:
 		information, reads all contacts to display from a bin file adds new contacts to and removes them from it (bin file). Then
 		inspiration for this contact list came from a post made by Dara Yuk (http://java.worldbestlearningcenter.com/2013/06/contact-
 		list.html)
+
+Using the Java Mission Control, we measure the performance of the application over a short period of time (around 10 minutes), and get the
+following statistics.
+https://github.com/GeorgeKyriakou/Java-VideoChat-Application.wiki.git
