@@ -150,7 +150,7 @@ public class handleCalls implements ActionListener, Runnable {
 		EventQueue.invokeLater(new Runnable() {
 			// @Override
 			public void run() {
-				ta.append(s + "\u23CE\n");
+				ta.append(s + "\n");
 			}
 		});
 	}
